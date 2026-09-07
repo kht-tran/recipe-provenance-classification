@@ -18,13 +18,16 @@ Before comparing models, the first step was checking the data against its own do
 - Reconciled the TF-IDF feature values with their actual underlying formula (distinct from the one stated in the problem description), which left unaddressed would have misrepresented ingredient rarity across the entire feature set
 - Uncovered 54% train/test row-level duplication; the grouped CV protocol prevents this from inflating reported accuracy
 
+
 ## Tools Used
 Python (pandas, numpy, scikit-learn, XGBoost, LightGBM, SHAP)
 
 ## Repository Contents
-- `00_eda_tfidf_diagnosis.ipynb`: TF-IDF formula diagnosis and exploratory data analysis
-- `01_model_benchmark.py`: grouped cross-validation benchmark across 13 classifier families
-- `02_final_model.py`: final multi-seed Extra-Trees + exact-pattern lookup pipeline
-- `03_feature_importance.py`: Gini importance and SHAP (TreeSHAP) analysis of the final model
+- `n00_eda_tfidf_diagnosis.ipynb`: TF-IDF formula diagnosis and exploratory data analysis
+- `n01_model_benchmark.py`: grouped cross-validation benchmark across 13 classifier families
+- `n02_final_model.py`: final multi-seed Extra-Trees + exact-pattern lookup pipeline
+- `n03_feature_importance.py`: Gini importance and SHAP (TreeSHAP) analysis of the final model
 - `report.pdf`: full write-up (methodology, validation design, results, limitations)
 - `report/report.tex`: LaTeX source for the report
+- `data_dictionary.md`: column descriptions for the 40 ingredient features and the target label
+  The dataset (`train.csv`, `test.csv`) was provided by the university for coursework and is not included in this repository. Code is shared to demonstrate methodology
