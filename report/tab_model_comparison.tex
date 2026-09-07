@@ -1,0 +1,25 @@
+\begin{tabular}{lcc}
+\toprule
+Method & Error\,(\%) & Std\,(\%) \\
+\midrule
+Complement Naive Bayes & $29.15$ & $2.17$ \\
+LDA & $27.32$ & $1.65$ \\
+Bernoulli Naive Bayes & $26.63$ & $2.04$ \\
+\addlinespace[4pt]
+Logistic regression (L2) & $26.43$ & $1.59$ \\
+Logistic regression (elastic net) & $26.40$ & $1.63$ \\
+Logistic regression (L1) & $26.36$ & $1.57$ \\
+\addlinespace[4pt]
+KNN (cosine, $k{=}5$) & $23.20$ & $1.30$ \\
+\addlinespace[4pt]
+XGBoost & $16.48$ & $1.65$ \\
+LightGBM & $16.34$ & $1.55$ \\
+HistGradientBoosting & $16.33$ & $1.28$ \\
+\addlinespace[4pt]
+SVM (RBF kernel) & $14.81$ & $1.45$ \\
+\addlinespace[4pt]
+Random forest & $14.32$ & $1.36$ \\
+Extra-Trees (43 features, final) & $12.83$ & $0.74$ \\
+Extra-Trees (40 features) & $12.73$ & $1.00$ \\
+\bottomrule
+\end{tabular}
