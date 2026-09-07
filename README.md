@@ -30,4 +30,5 @@ Python (pandas, numpy, scikit-learn, XGBoost, LightGBM, SHAP)
 - `report.pdf`: full write-up (methodology, validation design, results, limitations)
 - `report/report.tex`: LaTeX source for the report
 - `data_dictionary.md`: column descriptions for the 40 ingredient features and the target label
+  
   The dataset (`train.csv`, `test.csv`) was provided by the university for coursework and is not included in this repository. Code is shared to demonstrate methodology
