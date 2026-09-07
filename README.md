@@ -14,7 +14,8 @@ Before comparing models, the first step was checking the data against its own do
 - Interpreted the model with Gini importance and SHAP (TreeSHAP)
 
 ## Key Results
-- ~12.8% misclassification rate on novel (non-duplicate) recipes - best of 13 model families benchmarked
+- Final submission scored 103 misclassifications out of 1734 held-out test recipes (5.94% error), using the combined pipeline: exact-pattern lookup for recipes matching a training row, Extra-Trees classifier for the rest
+- The Extra-Trees classifier alone reaches ~12.8% misclassification on genuinely novel recipes (grouped cross-validation estimate, isolating model performance from the lookup), which is the best of 13 model families benchmarked
 - Reconciled the TF-IDF feature values with their actual underlying formula (distinct from the one stated in the problem description), which left unaddressed would have misrepresented ingredient rarity across the entire feature set
 - Uncovered 54% train/test row-level duplication; the grouped CV protocol prevents this from inflating reported accuracy
 
